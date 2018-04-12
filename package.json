@@ -1,0 +1,67 @@
+{
+  "name": "vue-aiie-contenteditor",
+  "description": "A editors on the web made with Vue",
+  "version": "1.1.0",
+  "main": "dist/vue-aiie-contenteditor.min.js",
+  "author": "Jinma Yamashita <jinmayamashita@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "poi ./examples",
+    "test": "xo --env=node --env=browser --prettier",
+    "prettier": "prettier ./src/**/*.js --write --ignore-path .gitignore .",
+    "purge": "rm -rf dist/",
+    "build": "yarn purge && rollup -c"
+  },
+  "devDependencies": {
+    "poi": "^9.6.13",
+    "prettier": "^1.11.1",
+    "rollup": "^0.57.1",
+    "rollup-plugin-buble": "^0.19.2",
+    "rollup-plugin-commonjs": "^9.1.0",
+    "rollup-plugin-css-only": "^0.4.0",
+    "rollup-plugin-node-resolve": "^3.3.0",
+    "rollup-plugin-uglify": "^3.0.0",
+    "xo": "^0.20.3"
+  },
+  "dependencies": {
+    "prosemirror-commands": "^1.0.7",
+    "prosemirror-dropcursor": "^1.0.0",
+    "prosemirror-gapcursor": "^1.0.2",
+    "prosemirror-history": "^1.0.2",
+    "prosemirror-inputrules": "^1.0.1",
+    "prosemirror-keymap": "^1.0.1",
+    "prosemirror-menu": "^1.0.4",
+    "prosemirror-model": "^1.4.0",
+    "prosemirror-schema-basic": "^1.0.0",
+    "prosemirror-schema-list": "^1.0.1",
+    "prosemirror-state": "^1.2.0",
+    "prosemirror-view": "^1.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aiiejapan/vue-aiie-contenteditor.git"
+  },
+  "keywords": [
+    "editor"
+  ],
+  "bugs": {
+    "url": "https://github.com/aiiejapan/vue-aiie-contenteditor/issues"
+  },
+  "homepage": "https://github.com/aiiejapan/vue-aiie-contenteditor#readme",
+  "xo": {
+    "ignores": [
+      "examples/**"
+    ],
+    "rules": {
+      "import/no-unassigned-import": 0
+    }
+  },
+  "prettier": {
+    "printWidth": 80,
+    "tabWidth": 2,
+    "useTabs": false,
+    "singleQuote": false,
+    "trailingComma": "none",
+    "bracketSpacing": true
+  }
+}
