@@ -1,6 +1,6 @@
 <template>
   <div class="app">
-    <vue-aiie-contenteditor className="example" />
+    <vue-aiie-contenteditor withTitle />
   </div>
 </template>
 <style>
