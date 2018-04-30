@@ -41,16 +41,31 @@ new Vue({
 ```
 
 ```html
-<div class="app">
-  <vue-aiie-contenteditor
-    className="example"
-  />
-</div>
+<template>
+  <div class="app">
+    <vue-aiie-contenteditor
+      className="example"
+      :contentTitle="Hello world"
+      :dispatch=this.bindEditorValue
+    />
+  </div>
+</template>
+<script>
+  export default {
+    methods: {
+      bindEditorValue(editorValue) {
+        console.log(editorValue)
+      }
+    }
+  }
+</script>
 ```
 ### Properties
 |name|type|description
 |--|--|--
 |`className`|String| identifies a class for css styling.
+|`contentTitle`|String| title text of content.
+|`dispatch`|Function| callback function for handling data
 
 ## Change log
 
