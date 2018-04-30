@@ -24,6 +24,7 @@
     "xo": "^0.20.3"
   },
   "dependencies": {
+    "npm": "^6.0.0",
     "prosemirror-commands": "^1.0.7",
     "prosemirror-dropcursor": "^1.0.0",
     "prosemirror-gapcursor": "^1.0.2",
